@@ -19,7 +19,8 @@ function App() {
 
   return (
     <div className="App">
-      {puppies.map((puppy) => (
+      <h1 className="animation">Puppy List</h1>
+     {puppies.map((puppy) => (
         <p onClick={() => handleClick(puppy.id)} key={puppy.id}>
           {puppy.name}
         </p>
